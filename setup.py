@@ -15,7 +15,7 @@ setup(
         "six>=1.10.0",
         "scikit-learn",
         "scanpy",
-        "kopt",
+        # "kopt",
         "pandas",  # for preprocessing
     ],
     url="https://github.com/theislab/dca",
