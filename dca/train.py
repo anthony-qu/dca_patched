@@ -18,6 +18,8 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 import random
 
 from . import io
@@ -27,6 +29,7 @@ from .hyper import hyper
 import numpy as np
 import tensorflow as tf
 
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 tf.compat.v1.disable_v2_behavior()
 
 
